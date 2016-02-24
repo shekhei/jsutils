@@ -1,0 +1,26 @@
+{
+  "name": "some-stuff",
+  "version": "0.0.1",
+  "description": "some stuff for js",
+  "main": "lib/index.js",
+  "scripts": {
+    "pretest": "./node_modules/.bin/babel -d lib src",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-register test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shekhei/jsutils.git"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "Wong Shek Hei Felix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shekhei/jsutils/issues"
+  },
+  "homepage": "https://github.com/shekhei/jsutils#readme",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
